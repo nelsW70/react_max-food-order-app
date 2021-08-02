@@ -12,7 +12,7 @@ const AvailableMeals = () => {
 
   useEffect(() => {
     const fetchMeals = async () => {
-      const response = await fetch(`${firebase}`);
+      const response = await fetch(`${firebase}/meals.json`);
 
       if (!response.ok) {
         throw new Error('Something went wrong!');
